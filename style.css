@@ -11,7 +11,8 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 20px;
   margin: 0;
-}
+  }
+
 
 html {
   scroll-behavior: smooth;
@@ -19,6 +20,7 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  font-size: 1rem; /* General font size */
 }
 
 /* TRANSITION */
@@ -150,13 +152,18 @@ a:hover {
 
 /* SECTIONS */
 
-section {
-  padding-top: 4vh;
-  height: 96vh;
+/* section { */
+  /* padding-top: 4vh; */
+  /* height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: fit-content; */
+section {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    overflow: hidden; /* Ensures content doesn't overflow */
 }
+/* } */
 
 .section-container {
   display: flex;
@@ -199,7 +206,7 @@ section {
 
 .title {
   padding-bottom:5vh ;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -306,13 +313,11 @@ section {
   background: rgb(255, 255, 255);
   border-radius: 1rem;
   border: rgb(255, 255, 255) 0.1rem solid;
-  /* border-color: rgb(163, 163, 163); */
   text-align: left;
   width: 97%;
-  margin-bottom: 20px; /* Adjust the value as needed */
-
+  margin-bottom: 2rem; /* Adjust margin for separation */
+  }
   
-}
 
 .section-container {
   gap: 4rem;
@@ -326,7 +331,7 @@ section {
 }
 
 .education{
-  font-size: 1vw; 
+  font-size: 1.2rem; 
   color: rgb(52, 144, 236);
   border-bottom: 1px solid #000;
   padding-bottom: 5px;
