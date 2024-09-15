@@ -9,8 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 20px;
-  margin: 0;
+  /* padding: 40px; */
+  margin: 40px;
   }
 
 
@@ -35,6 +35,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  font-size: 0.9rem;
 }
 
 nav {
@@ -110,7 +111,7 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
@@ -160,7 +161,7 @@ a:hover {
   min-height: fit-content; */
 section {
     padding: 2rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     overflow: hidden; /* Ensures content doesn't overflow */
 }
 /* } */
@@ -175,20 +176,24 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 65vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 800px;
+  width: 800px;
   margin: auto 0;
+  border: #000;
 }
+
 
 .section__text {
   align-self: center;
   text-align: center;
+  padding: 1rem;
 }
+
 
 .section__text p {
   font-weight: 600;
@@ -200,28 +205,35 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.70rem;
   margin-bottom: 2rem;
 }
 
 .title {
-  padding-bottom:5vh ;
+  padding-bottom:3.5vh ;
   font-size: 3rem;
   text-align: center;
 }
+.title_home {
+  padding-bottom:3.5vh ;
+  font-size: 5rem;
+  text-align: center;
+}
+
+
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-top: 5rem;
+  gap: 2.8rem;
 }
 
 /* ICONS */
 
 .icon {
   cursor: pointer;
-  height: 2.75rem;
+  height: 4rem;
 }
 
 /* BUTTONS */
@@ -237,13 +249,15 @@ section {
   font-weight: 700;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 0.5rem;
+  font-size:1.2rem ;
+
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(54, 52, 52) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -253,8 +267,8 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: #b3b5d8;
+  color: rgb(0, 0, 0);
 }
 
 .btn-color-1:hover {
@@ -270,7 +284,7 @@ section {
 }
 
 .btn-container {
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 /* ABOUT SECTION */
@@ -282,7 +296,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .about-details-container {
@@ -298,7 +312,9 @@ section {
 }
 
 .about-pic {
-  border-radius: 30rem;
+  /* border-radius: 1rem; */
+  height: 300px; 
+  width: 400px; 
 }
 
 .arrow {
@@ -315,7 +331,7 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
   text-align: left;
   width: 97%;
-  margin-bottom: 2rem; /* Adjust margin for separation */
+  /* margin-bottom: 2rem; Adjust margin for separation */
   }
   
 
@@ -325,18 +341,30 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
+  padding-right: 5rem;
+  margin-top: 1rem;
   margin: auto 0;
 }
 
 .education{
-  font-size: 1.2rem; 
+  font-size: 1.45rem; 
   color: rgb(52, 144, 236);
   border-bottom: 1px solid #000;
   padding-bottom: 5px;
 }
+.education_degree_p{
+  font-size: 1.35rem;
+  color:rgb(80, 88, 91);
+}
+.education_subtext_p{
+  font-size: 1.1rem;
+  color:  #333;
+  font-style: italic;
+  font-weight: 300;
 
+}
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -345,9 +373,9 @@ section {
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   text-align: center;
 }
 
@@ -412,13 +440,13 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 30vh;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
@@ -450,7 +478,7 @@ article .icon {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  margin: 1 1 0 1rem;
 }
 
 footer p {
@@ -500,16 +528,11 @@ footer p {
 .research_experience_details-container {
   padding: 1.5rem;
   flex: 10;
-  background: rgb(255, 255, 255);
-  border-radius: 0rem;
-  border: rgb(247, 243, 243) 0.1rem solid;
-  border-color: rgb(249, 246, 246);
   text-align: left;
   width: 97%;
-  margin-bottom: 20px; /* Adjust the value as needed */
-
-  
+  margin-bottom: 20px; /* Adjust the value as needed */  
 }
+
 .research-experience {
   font-family: Times New Roman, serif; /* or any font similar to the one in the image */
   color: #000; /* Black color for text */
@@ -517,7 +540,7 @@ footer p {
 }
 
 .research-experience h2 {
-  font-size: 24px;
+  /* font-size: 2rem; */
   margin-bottom: 20px;
   border-bottom: 2px solid #000;
 }
@@ -535,7 +558,14 @@ footer p {
 }
 
 .field {
-  font-size: 26px;
+  font-weight: bold;
+  color: rgb(137, 137, 250);
+
+}
+
+
+.field_text {
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(137, 137, 250);
 
@@ -554,11 +584,12 @@ footer p {
 .thesis-details li {
   margin-bottom: 10px;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .thesis-details li strong {
   color: #000;
-  font-size: 18px; /* Black color for bold text */
+  font-size: 1.2rem; /* Black color for bold text */
 }
 
 /*HONORS AND AWARDS------------------start----------------------------------------------------------------------------------------------------*/
@@ -689,3 +720,30 @@ footer p {
 }
 
 
+.about-text {
+    transform: translateX(-15%);
+    animation: slideIn 1.5s forwards;
+  }
+@keyframes slideIn {
+    to {
+      transform: translateX(0);
+    }
+  }
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(179, 222, 241);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  .subtitle {
+    font-size: 0.8em;
+    color: gray;
+    margin-left: 5px;
+  }  
