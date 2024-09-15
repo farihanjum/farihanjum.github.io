@@ -10,12 +10,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="icon" href="\assets\F_.jpg" type="image/x-icon"> -->
+
+    <link rel="icon" href="\assets\F_ (2).png" type="image/x-icon">
   </head>
   <body>
     
-    <nav id="desktop-nav">
-      <div class="logo">Fariha Anjum Shifa</div>
+    <nav id="desktop-nav" style="background-color: #ffffff;">
+
+        <div class="brand">
+          <span class="status-dot"></span>
+          <h1>F A R I H A </h1>
+          <span class="status-dot"></span>
+
+          <!-- <p class="subtitle">Student | DU </p> -->
+        </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -28,8 +36,10 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Fariha Anjum Shifa</div>
+
+    <nav id="hamburger-nav" >
+      <div class="logo">
+        Fariha</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -48,15 +58,12 @@
       </div>
     </nav>
     <!-- Profile section started -->
-    <section id="profile">
-      <!-- <div class="section__pic-container">
-         <img src="\assets\F_.jpg" 
-              alt="John Doe profile picture"
-              class="about-pic" /> 
-      </div>  -->
+    <section id="profile" style="background-color: #ffffff ;">
+      
       <div class="section__text">
         <!-- <p class="section__text__p1">Hello, I am</p> -->
-        <h1 class="title">Fariha Anjum Shifa</h1>
+        <h1 class="title_home about-text">
+          Fariha Anjum Shifa</h1>
         <p class="section__text__p2">Graduate student at <a href="https://du.ac.bd/body/CSE" target="_blank" style="font-family: 'Georgia', serif;  color: #7c81e3;">University of Dhaka</a></p>
         <div class="btn-container">
           <button
@@ -65,7 +72,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
@@ -92,13 +99,13 @@
       </div>
     </section>
     <!-- Section = about started -->
-    <section id="about">
+    <section id="about" style="background-color: #ffffff;">
       <!-- <p class="section__text__p1">Get To Know More</p> -->
       <h1 class="title">About Me</h1>
       <div class="section-container"> 
          <div class="section__pic-container"> 
           <img
-            src="./assets/Formal_photo.jpg"
+            src="./assets/About_image.png"
             alt="Profile picture"
             class="about-pic"
           />
@@ -122,19 +129,20 @@
 <!-- Section about ended -->
 
 <!-- @section education  -->
-<section id="education">
+<section id="education" style="background-color:#FFFFFF;">
 <h1 class="title">Education</h1>
 <div class="details-containers">
 
-    <p style="font-size: 1.3vw;">University of Dhaka - Dhaka, Bangladesh</h1> 
+    <p style="font-size: 2rem;">University of Dhaka - Dhaka, Bangladesh</h1> 
     <p class="education">Department of Computer Science & Engineering</p><br/>
-    <p style="font-size: 1.1vw;">M.Sc. in Computer Science and Engineering (2023 - Present) </p>
-    <p style="font-size: 0.9vw;">CGPA: 3.71/4.00</p>  
-    <p style="font-size: .9vw; color: rgb(131, 142, 147)">(everything but defense )</p>
+    <p class="education_degree_p">
+      M.Sc. in Computer Science and Engineering (2023 - Present) </p>
+    <p class="education_subtext_p">CGPA: 3.71/4.00</p>  
+    <p class="education_subtext_p">(everything but defense )</p>
     </br>
-      <p style="font-size: 1.1vw;">B.Sc. in Computer Science and Engineering (2018 - 2023) </p>
-      <p style="font-size: 0.9vw; ">CGPA: 3.21/4.00 (last 60-credit GPA: 3.51)</p>  
-      <p style="font-size: 0.9vw; color: rgb(131, 142, 147);"> Coursework: Linear Algebra, Mathematical and Statistical Analysis for Engineers, Operating Systems</p>
+      <p class="education_degree_p">B.Sc. in Computer Science and Engineering (2018 - 2023) </p>
+      <p class="education_subtext_p">CGPA: 3.21/4.00 (last 60-credit GPA: 3.51)</p>  
+      <p class="education_subtext_p"> Coursework: Linear Algebra, Mathematical and Statistical Analysis for Engineers, Operating Systems</p>
 
   </div>   
 </section>
@@ -142,15 +150,15 @@
 <!-- --------------------------------------------RESEARCH EXPERIENCE------------------------------------------------------------------ -->
 
 
-<section id="research_experience">
+<section id="research_experience" >
   <!-- <p class="section__text__p1">Research Experience</p> -->
 
-  <h1 class="title">Research Experience</h1>
-  <div class="experience-details-container">
+  <h1 class="title" >Research Experience</h1>
+  <!-- <div class="experience-details-container"> -->
     <div class="research_experience_details-container"
       <div class="experience-item">
         <div class="experience-header">
-          <span class="field">Undergraduate Thesis</span>
+          <span class="field field_text">Undergraduate Thesis</span>
           <span class="date-range">January 2022 - January 2023</span>
         </div>
 
@@ -161,7 +169,7 @@
       <!-- ----------ITEM2 -------------- -->
         <div class="experience-item">
           <div class="experience-header">
-            <span class="field">Computational Biology (Ongoing)</span>
+            <span class="field field_text">Computational Biology (Ongoing)</span>
             <span class="date-range">March 2023- present</span>
           </div>
       </div>
@@ -174,7 +182,7 @@
        <!-- ----------ITEM3 -------------- -->
        <div class="experience-item">
         <div class="experience-header">
-          <span class="field">Natural Language Processing (Ongoing )</span>
+          <span class="field field_text">Natural Language Processing (Ongoing )</span>
           <span class="date-range">July 2024- present</span>
         </div>
     </div>
@@ -184,7 +192,7 @@
     </ul>
     </div>
 
-  </div>
+  <!-- </div> -->
 </section> 
 
 <!-- -----------------------------SECTION PROJECT 2------------------------------------------------------------- -->
@@ -287,8 +295,7 @@
 </section>
 
 <section id="contact"> 
-      <p class="section__text__p1">Get in Touch</p> 
-      <h2 class="title">Contact Me </h2>
+      <p class="title">Get in Touch</p> 
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
