@@ -526,7 +526,7 @@ footer p {
 }
 /*RESEARCH EXPERIENCE SECTION*/
 .research_experience_details-container {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   flex: 10;
   text-align: left;
   width: 97%;
@@ -554,6 +554,7 @@ footer p {
   justify-content: space-between;
   border-bottom: 1px solid #000;
   padding-bottom: 5px;
+  padding-top: 1em;
   margin-bottom: 10px;
 }
 
@@ -565,7 +566,7 @@ footer p {
 
 
 .field_text {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   color: rgb(137, 137, 250);
 
@@ -582,14 +583,14 @@ footer p {
 }
 
 .thesis-details li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   line-height: 1.5;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .thesis-details li strong {
   color: #000;
-  font-size: 1.2rem; /* Black color for bold text */
+  font-size: 1.2rem; 
 }
 
 /*HONORS AND AWARDS------------------start----------------------------------------------------------------------------------------------------*/
@@ -697,6 +698,12 @@ footer p {
   
 }
 
+.indented-sublist {
+  padding-top: 0.9em;
+  padding-left: 1.5em;
+  font-size: 0.8em ;
+  color: #323c3ce5; /* Adjust based on relative font size */
+}
 /* Hover effect for buttons */
 .project button:hover {
   background-color: #eee;
