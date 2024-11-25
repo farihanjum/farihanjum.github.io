@@ -1,2 +1,2 @@
 # farihanjum.github.io
-Its a repository for portfolio
+Its a cry for help
