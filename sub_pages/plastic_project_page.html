@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    
+    <!-- Include Google Fonts or custom font links if needed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <!-- Basic CSS for styling -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            /* max-width: 1520px; */
+            margin: 40 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #4A90E2;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color:rgb(51, 87, 217)
+        }
+
+        .abstract {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 8px 12px;
+            background-color: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .pdf-link:hover {
+            background-color: #357ABD;
+        }
+
+        .algorithm-section, .performance-section {
+            margin: 20px 0;
+        }
+
+        .performance-section img {
+            max-width: 50%;
+            height: auto;
+            margin: 10px 0;
+            box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+        }
+
+        .algorithm-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Research Projects</h1>
+
+    <div class="project">
+        <!-- <h2 class="project-title">A Risk-score Based Model for Dynamics of Infectious Disease Spread</h2> -->
+        
+        <div class="performance-section">
+            <img src="/assets/img/Publications/Plastic/PL_poster.jpg" alt="Thesis Poster" style="max-width: 100%; height: auto; margin: 20px 0;">
+        </div>
+        <h3>Abstract</h3>
+
+        <p class="abstract">
+            The growing accumulation of plastic waste presents a significant environmental
+            challenge, necessitating innovative approaches to mitigate its impact. Enzymatic
+            degradation has emerged as a promising solution for addressing plastic pollution.
+            However, the isolation and characterization of plastic-degrading enzymes (PDEs)
+            through laboratory experiments are costly, time-consuming, and often complicated
+            by nonculturable microorganisms. Consequently, accurate in silico identification
+            of PDEs is desirable to explore the diversity of natural enzymes and harness their
+            potential for combating plastic pollution. This study introduces a novel feature extraction strategy for identifying plastic-degrading enzymes, incorporating Autocorrelation (AAutoCor), Composition of k-spaced Amino Acid Pairs (KSAP), Dipeptide Deviation
+             from Expected Mean (DDE), Composition/Transition/Distribution
+            (C/T/D), Conjoint Triad, and Secondary Structure. A combination of ANOVA and
+            XGBoost, feature selection methods, was applied to optimize the feature dimensions for improved performance. Seven supervised machine learning models were
+            employed to evaluate the dataset: Convolutional Neural Network(CNN), Random
+            Forest Classifier, Feedforward Neural Network, Logistic Regression, Naive Bayes
+            Classifier, K-nearest Neighbor, and XGBoost Classifier. Among these models, the
+            CNN model demonstrated the best performance, achieving an accuracy of 0.96, an
+            F1 score of 0.80, and an ROC-AUC score of 0.96. These findings underscore the
+            potential of the proposed system as an accurate predictor of plastic-degrading enzymes from environmental sequences. This approach significantly enhances efforts
+            to develop sustainable solutions to plastic waste by accelerating the discovery of
+            novel PDEs.
+        </p>
+
+        <a href="/assets/img/Publications/Plastic/PDF.pdf" class="pdf-link" target="_blank">Download PDF</a>
+
+        <div class="algorithm-section">
+            <h2>Flowchart of the proposed system</h2>
+            <div class="performance-section">
+                <img src="/assets/img/Publications/Plastic/Diagram_paper_1.jpeg" alt="Performance Graph 1" style="display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+        <div class="performance-section">
+            <h2>Essential Features Extraction</h2>
+            <img src="/assets/img/Publications/Plastic/Graph.jpg" alt="Performance Graph 1" style="display: block; margin: 0 auto;">
+            <h2>Convolutional Neural Network Performance on five combined feature sets</h2>
+
+
+            <img src="/assets/img/Publications/Plastic/CNN_f1_5.jpg" alt="Performance Graph 2" style="display: block; margin: 0 auto;">
+            <h2>ROC-AUC Curve for seven models on feature set 4</h2>
+
+
+            <img src="/assets/img/Publications/Plastic/F4.jpg" alt = "Performance Graph 3" style="display: block; margin: 0 auto;">
+
+        </div>
+    </div>
+
+    <!-- Add more projects in a similar way -->
+</div>
+
+</body>
+</html>
