@@ -76,7 +76,7 @@ a:hover {
 .card{
 	border: 1px solid var(--blue-light);
 /* 	background-color: var(--blue-medium); */
-	background-color: var(--bluish-gray);
+	background-color: rgb(245, 241, 232);
 	
 }
 

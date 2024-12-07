@@ -41,7 +41,7 @@ a:hover {
 }
 
 .card{
-    background-color: var(--light-gray);
+    background-color: white;
 }
 
 .card-subtitle{
@@ -76,7 +76,7 @@ a:hover {
 .card{
 	border: 1px solid var(--blue-light);
 /* 	background-color: var(--blue-medium); */
-	background-color: var(--bluish-gray);
+	/* background-color: var(--bluish-gray); */
 	
 }
 

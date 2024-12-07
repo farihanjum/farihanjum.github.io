@@ -84,7 +84,7 @@ a:hover {
 
 .articles-card{
 	
-	background-color: var(--bluish-gray);
-	border-radius: 5px;
+    background-color: rgb(246, 242, 233);
+    border-radius: 5px;
 	border: 1px solid var(--blue-light);
 }

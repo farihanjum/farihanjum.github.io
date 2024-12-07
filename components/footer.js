@@ -20,8 +20,8 @@ class Footer extends HTMLElement {
                     <p class="mb-0" style="color: var(--light-gray);"></p>
                     <p class="my-0 pt-0">
                         <a href=""><i class="mr-3 footer-icons fa-solid fa-house" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/fariha-anjum-shifa-a399a71a9" target="_blank"><i class="mr-3 fab footer-icons fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/farihanjum" target="_blank"><i class="mr-3 fab footer-icons fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/fariha-anjum-shifa-a399a71a9" target="_blank"><i class="mr-3 fab footer-icons fa-linkedin" aria-hidden="true" style="color: var(--blue-medium)"></i></a>
+                        <a href="https://github.com/farihanjum" target="_blank"><i class="mr-3 fab footer-icons fa-github" aria-hidden="true" style="color: black"></i></a>
                     </p>
                 </div>
             </div>

@@ -47,7 +47,9 @@ body {
 
 
 nav {
-	background-color:var(--blue-dark);
+	background-color: rgb(7, 62, 81)
+  /* background-color:var(--blue-dark); */
+
     /* height: 5rem; */
 }
 
@@ -95,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 /* footer */
 
 .footer-lemos {
-  background-color: #0f4c75;
+  background-color: #cedbe5;
   font-size: smaller;
 }
 
