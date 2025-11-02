@@ -12,6 +12,7 @@
   --dark-b: #003566;
   --gray-black: #415a77;
   --darker-b:#1B262C;
+  --black: #000000;
 
   /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
 }
@@ -37,7 +38,7 @@ h4,h5, p, ul>li, .btn-blue{
 
 button:hover{
     font-size:1.0001rem ;
-    background-color: var(--blue-medium);
+    background-color: y;
     /* color: var(--white-ish) !important; */
 }
 
