@@ -17,6 +17,15 @@ class Header extends HTMLElement {
       <li class="nav-item mr-2">
         <a class="nav-link" href="/">Home</a>
       </li>
+
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="/pages/cv.html">CV</a>
+      </li>
+
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="/pages/publications.html">Publications</a>
+      </li>
+
       <li class="nav-item mr-2">
         <a class="nav-link" href="/pages/education.html">Education</a>
       </li>
@@ -26,21 +35,15 @@ class Header extends HTMLElement {
       <li class="nav-item mr-2">
         <a class="nav-link" href="/pages/projects.html">Projects</a>
       </li> 
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="/pages/publications.html">Publications</a>
-      </li>
+    
       <li class="nav-item mr-2">
         <a class="nav-link" href="/pages/blogposts.html">Blogs</a>
       </li>
       <li class="nav-item mr-2"> 
         <a class="nav-link" href="/pages/photogallery.html">Gallery</a>
       </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="/pages/cv.html">CV</a>
-      </li>
-      <li class="nav-item mr-2">
-        <a class="nav-link" href="/pages/bookshelf.html">Bookshelf</a>
-      </li>
+      
+  
       </ul>
       </div>
       </nav>
