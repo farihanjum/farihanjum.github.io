@@ -19,7 +19,7 @@ class Header extends HTMLElement {
       </li>
 
       <li class="nav-item mr-2">
-        <a class="nav-link" href="/pages/cv.html">CV</a>
+        <a class="nav-link" href="/pages/CV.html">CV</a>
       </li>
 
       <li class="nav-item mr-2">
