@@ -173,26 +173,171 @@
     .interest-tag:hover i {
         color: white;
     } 
+
+    /* Profile Card Floating Wrapper */
+.profile-float-wrapper {
+    /* Desktop: Float left so text wraps */
+    float: left;
+    margin-right: 2rem; /* Space between image and text */
+    margin-bottom: 1rem;
+    max-width: 320px; /* Limits the width of the profile section */
+    width: 100%;
+    text-align: center;
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 768px) {
+    .profile-float-wrapper {
+        float: none;
+        margin-right: 0;
+        margin: 0 auto 2rem auto; /* Center it */
+        max-width: 100%;
+    }
+}
+
+/* Just to ensure the card looks clean */
+.profile-card-inner {
+    background: #fff;
+    padding: 10px;
+    /* Optional: Add a border if you want a box look */
+    /* border: 1px solid #eee; border-radius: 8px; */
+}
 </style>
 
     </head>
 
 <body>
 
-    <div id="page-container">
+     <div id="page-container">
         <header-component></header-component>
-
-        <!-- <div class="container-fluid mt-4"> -->
         <div class="container mt-4">
-            <!-- <h5 class="mb-4"><b>__ Home _____________________</b></h5> -->
+    <div class="mb-4"></div>
+
+    <div class="clearfix">
+        
+        <div class="profile-float-wrapper">
+            <div class="profile-card-inner">
+                <img class="mx-auto d-block" 
+                     style="width: 80%; border-radius: 5%; padding: 3px;" 
+                     src="/assets/img/20251113_183301.jpg" 
+                     alt="Fariha Anjum Shifa">
+
+                <div class="mt-3">
+                    <h4 class="mb-0" style="color: black; font-family: 'Ubuntu Sans', sans-serif;">
+                        Fariha Anjum Shifa
+                    </h4>
+                    <p class="text-muted mt-2 mb-3 small">
+                        Graduate student | Dept. of Computer Science<br>University of Dhaka
+                    </p>
+
+                    <ul class="social-icons list-inline mb-3">
+                        <li class="list-inline-item">
+                            <a href="https://scholar.google.com/citations?user=YOUR_USER_ID" target="_blank">
+                                <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar" style="width:20px;height:20px;">
+                            </a>
+                        </li>
+                        <li class="list-inline-item ml-2">
+                            <a href="mailto:farihaanjum.shifa@gmail.com">
+                                <i class="fa-regular fa-envelope" style="color:#f2280d;font-size:20px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ml-2">
+                            <a href="https://www.linkedin.com/in/fariha-anjum-shifa-a399a71a9" target="_blank">
+                                <i class="fab fa-linkedin" style="color:#0A66C2;font-size:20px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ml-2">
+                            <a href="https://github.com/farihanjum" target="_blank">
+                                <i class="fab fa-github" style="color:#181717;font-size:20px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="mb-2">
+                        <a href="/assets/CV/Fariha_Anjum_Shifa__CV_f.pdf" target="_blank" class="btn btn-blue btn-sm btn-block">
+                            Download CV <i class="ml-2 fa-regular fa-file"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4 class="font-weight-bold">About Me</h4>
+            <p style="color: black; text-align: justify;">
+                I am Fariha Anjum Shifa, a graduate student in the Department of Computer Science and Engineering at the University of Dhaka, Bangladesh. I completed my undergraduate degree in Computer Science and Engineering at the same institution.
+            </p>
+            <p style="color: black; text-align: justify;">
+                During my undergraduate thesis, I worked under the supervision of <a href="https://www.du.ac.bd/faculty/faculty_details/CSE/1765" target="_blank" style="color: #b600b0">Dr. Upama Kabir</a> on research related to infectious diseases in the field of epidemiology.
+            </p>
+            <p style="color: black; text-align: justify;">
+                My passion lies in advancing natural language processing for low-resource languages, with a particular focus on how large language models understand and reason in Bangla. I am driven to developing methods for training language models efficiently and affordably, no matter which language they serve.
+            </p>
+
+            <h4 class="mt-4 font-weight-bold">Research Interests</h4>
+            <div class="interest-container mt-3 mb-4">
+                <div class="interest-tag">
+                    <i class="fa-solid fa-language" style="margin-right: 0.3cm;"></i> Natural Language Processing
+                </div>
+                <div class="interest-tag">
+                    <i class="fa-solid fa-computer-mouse" style="margin-right: 0.3cm;"></i> Human-Computer Interaction
+                </div>
+                <div class="interest-tag">
+                    <i class="fa-solid fa-dna" style="margin-right: 0.3cm;"></i> Computational Biology
+                </div>
+            </div>
+
+            <section id="focus-questions">
+                <h4 class="mt-4 font-weight-bold">Research Problems I am interested in</h4>
+                <ul style="color: rgb(32, 31, 31);">
+                    <li class="mb-2"><strong>[Low-Resource Understanding]</strong><br>How can LLMs truly understand and reason in Bangla and other low-resource languages?</li>
+                    <li class="mb-2"><strong>[Cultural & Social Knowledge]</strong><br>How can we model and evaluate culture-specific and socially grounded knowledge in NLP systems?</li>
+                    <li class="mb-2"><strong>[Few-Shot NER]</strong><br>How can similarity-based example selection make Bangla NER more accurate and stable with few shots?</li>
+                    <li class="mb-2"><strong>[Efficient Adaptation]</strong><br>How can parameter-efficient and multilingual tuning close the gap between high- and low-resource languages?</li>
+                    <li><strong>[Reasoning Evaluation]</strong><br>How do we measure and improve LLM reasoning in cross-lingual, low-resource settings?</li>
+                </ul>
+            </section>
+
+            <div class="mt-5 news-card">
+                <div class="news-header">
+                    <h4 class="news-title"><i class="fa-regular fa-newspaper mr-2" style="color: #ea52ef;"></i> Latest News</h4>
+                </div>
+                <div class="news-body">
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <span class="news-date">Dec 2026</span>
+                            <span class="news-content">🎉 My master's thesis results were finally published!</span>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">Oct 2025</span>
+                            <span class="news-content">📄 My first first-authored paper was accepted at <strong>IJCNLP-AACL Findings</strong>!</span>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">Nov 2024</span>
+                            <span class="news-content">🎤 Presented my poster <em>"A Framework for Accurate Prediction of Plastic-Degrading Enzymes..."</em> at the <strong>23rd Science Council of Asia Conference</strong>.</span>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">Aug 2024</span>
+                            <span class="news-content">🎓 Joined the <strong>Data and Design Lab</strong>, University of Dhaka, as a Research Assistant.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> 
+        </div>
+</div>
+
+        <!--<div class="container-fluid mt-4"> 
+        <div class="container mt-4">
+             <h5 class="mb-4"><b>__ Home _____________________</b></h5> 
 			<div class="mb-4"> </div>
 
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- <div class="" style="width: 15rem;"> -->
+                     <div class="" style="width: 15rem;"> 
                     <div class="">
-                        <!-- <img class="rounded-circle" style="border:solid var(--blue-medium) 3px; width:100%"
-                        src="/assets/img/rochana_copy.jpg" alt="Card image cap"> -->
+                         <img class="rounded-circle" style="border:solid var(--blue-medium) 3px; width:100%"
+                        src="/assets/img/rochana_copy.jpg" alt="Card image cap"> 
                         <img class=" mx-auto d-block "
                             style=" width:70%; "
                             src="/assets/img/About_image.png" alt="Card image cap">
@@ -201,7 +346,7 @@
                             <h4 class="text-center mb-0"
                                 style="color: black;font-family: 'Ubuntu Sans', sans-serif; font-size: 1.75rm; max-width: 100%">
                                 Fariha Anjum Shifa</h4>
-                            <!-- <h6 class="text-center mb-2" style="font-size: 0.85rm"><small>rochana@cs.odu.edu</small></h6> -->
+                             <h6 class="text-center mb-2" style="font-size: 0.85rm"><small>rochana@cs.odu.edu</small></h6> 
                             <p class="text-center mb-4">Graduate student | Department of Computer Science | University of Dhaka  </p>
 
                             <div class="text-center">
@@ -249,8 +394,7 @@
                                     target="_blank">Download CV<i class="ml-2 fa-regular fa-file"></i></a></button>
                         </div>
 
-                        <!-- Outside of tech, I love learning about the lives of artists—what they went through and 
-                        what shaped them into who they were. Their stories fascinate and inspire me.  -->
+                      
 <h4 class="mt-4 font-weight-bold">Research Interests</h4>
 
 <div class="interest-container mt-3">
@@ -347,7 +491,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
         <!-- <footer-component></footer-component> -->
 
