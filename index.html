@@ -42,7 +42,140 @@
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-</head>
+
+        <style>
+    /* News Section Styling */
+    .news-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        overflow: hidden; /* Keeps content inside rounded corners */
+    }
+
+    .news-header {
+        background-color: #f8f9fa; /* Light grey background for title */
+        padding: 15px 20px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .news-title {
+        font-weight: 700;
+        margin: 0;
+        color: #333;
+        font-size: 1.25rem;
+    }
+
+    .news-body {
+        max-height: 300px; /* Limits height */
+        overflow-y: auto;  /* Adds scrollbar if content is too long */
+        padding: 0;
+    }
+
+    .news-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .news-item {
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: flex-start;
+        transition: background-color 0.2s;
+    }
+
+    .news-item:last-child {
+        border-bottom: none;
+    }
+
+    .news-item:hover {
+        background-color: #fafafa;
+    }
+
+    .news-date {
+        background-color: #e9ecef; /* Neutral badge color */
+        color: #495057;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-right: 15px;
+        min-width: 85px; /* Ensures all dates align nicely */
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .news-content {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.5;
+    }
+    
+    /* Optional: Custom Scrollbar for Webkit browsers */
+    .news-body::-webkit-scrollbar {
+        width: 6px;
+    }
+    .news-body::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+    }
+
+
+    /* Container for the tags */
+    .interest-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px; /* Slightly more space */
+    }
+
+    /* The Pill Design */
+    .interest-tag {
+        /* Light Purple Background */
+        background-color: #fff0fc; 
+        
+        /* Vibrant Purple Border */
+        /* border: 1px solid #1b021c;  */
+        
+        /* Dark Purple Text (Easy to read) */
+        color: #171617; 
+        
+        border-radius: 50px;
+        padding: 8px 20px;
+        font-size: 0.95rem;
+        font-weight: 600; /* Slightly bolder */
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(97, 31, 99, 0.15); /* Soft purple shadow */
+    }
+
+    /* Icon Color */
+    .interest-tag i {
+        margin-right: 10px;
+        font-size: 1.1rem;
+        color: #f0eaf0; /* Matches your theme */
+    }
+
+    /* Hover Effect - Pops out */
+    .interest-tag:hover {
+        background-color: #ec28f3; /* Turns solid purple */
+        color: white; /* Text turns white */
+        transform: translateY(-3px);
+        box-shadow: 0 5px 12px rgba(242, 232, 243, 0.4);
+    }
+
+    /* Make icon white on hover */
+    .interest-tag:hover i {
+        color: white;
+    } 
+</style>
+
+    </head>
 
 <body>
 
@@ -111,38 +244,29 @@
 
                              </br>
                   
-                        
+                        <div class="mb-5">
+                            <button type="button" class="ml-2 mt-2 btn btn-blue btn-sm"><a href="/assets/CV/Fariha_Anjum_Shifa__CV_f.pdf"
+                                    target="_blank">Download CV<i class="ml-2 fa-regular fa-file"></i></a></button>
+                        </div>
 
                         <!-- Outside of tech, I love learning about the lives of artists—what they went through and 
                         what shaped them into who they were. Their stories fascinate and inspire me.  -->
+<h4 class="mt-4 font-weight-bold">Research Interests</h4>
 
-                        </p>
+<div class="interest-container mt-3">
+    <div class="interest-tag">
+        <i class="fa-solid fa-language" style="color: #ab10b0;margin-right: 0.3cm;" ></i>Natural Language Processing
+    </div>
 
-                        <h4 class="mt-4 font-weight-bold"> Research Interest</h4>
-                        <!-- <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-                            pulvinar lacinia dui pulvinar gravida. Maecenas rhoncus felis sit amet euismod porta.
-                            Vivamus id ante eleifend, porta arcu ac, egestas libero. Nulla facilisi. Fusce sit amet diam
-                            sit amet dui tincidunt imperdiet.</p> -->
+    <div class="interest-tag">
+        <i class="fa-solid fa-computer-mouse" style="color: #ab10b0;margin-right: 0.3cm;"></i> Human-Computer Interaction
+    </div>
 
-                        <!-- <div class="text-center">
-                            <button type="button" class="mt-2 btn btn-blue btn-sm"><a href="" target="_blank">Research
-                                    Group Webpage<i class="ml-2 fa-solid fa-globe"></i></a></button>
-
-                            <button type="button" class="ml-4 mt-2 btn btn-blue btn-sm"><a href=""
-                                    target="_blank">Research Group Twitter<i
-                                        class="ml-2 fa-brands fa-x-twitter"></i></a> </button>
-
-                            <button type="button" class="ml-4 mt-2 btn btn-blue btn-sm"><a href=""
-                                    target="_blank">Research Group GitHub <i class="ml-2 fa-brands fa-github"></i></a>
-                            </button>
-                        </div> -->
-
-                        <!-- <p class="mt-4 text-justify"><span class="font-weight-bold">Research Interests:</span> -->
-                            </br>
-                
-                                <i class="fa-solid fa-feather" style="color: #ea52ef;"></i> Natural Language Processing  </li>
-                                <i class="fa-solid fa-feather" style="color: #ea52ef;"></i> Human Computer Interation  </li>
-                                <i class="fa-solid fa-feather" style="color: #ea52ef;"></i> Computational Biology</li>
+    <div class="interest-tag">
+        <i class="fa-solid fa-dna" style="color: #ab10b0;margin-right: 0.3cm;"></i> Computational Biology
+    </div>
+</div>
+               
                             
                         <section id="focus-questions">
   <h4 class="mt-4 font-weight-bold">Reserach Problems I am interested in</h4>
@@ -173,33 +297,50 @@
 
 
                         <h4 class="mt-4 font-weight-bold">  News</h4>
+<div class="mt-5 news-card">
+    <div class="news-header">
+        <h4 class="news-title">
+            <i class="fa-regular fa-newspaper mr-2" style="color: #ea52ef;"></i> Latest News
+        </h4>
+        </div>
+    
+    <div class="news-body">
+        <ul class="news-list">
+            
+            <li class="news-item">
+                <span class="news-date">Dec 2026</span>
+                <span class="news-content">
+                    🎉 My master's thesis results were finally published!
+                </span>
+            </li>
 
-                        <ul class="">
-                            <small>
-                                <li class="mb-2"><span class="ref-journal">25 October '2025 : </span>My first authored paper accepted at IJCNLP-AACL Findings!</li>
-                                <li class="mb-2"><span class="ref-journal">30 November '2024 : </span>Presented my poster "A Framework for Accurate Prediction of Plastic-Degrading Enzymes using Convolutional Neural Networks" at 23rd Science Council of Asia Conference! </li>
-                                <li class="mb-2"><span class="ref-journal">August '2024: </span> Joined Data and Design Lab, University of dhaka as a research asssitant! </li>
-                                <!-- <li class="mb-2"><span class="ref-journal">Month Year: </span> Joined __________
-                                    University as a Graduate Student</li> -->
+            <li class="news-item">
+                <span class="news-date">Oct 2025</span>
+                <span class="news-content">
+                    📄 My first first-authored paper was accepted at <strong>IJCNLP-AACL Findings</strong>!
+                </span>
+            </li>
 
-                            </small>
-                        </ul>
+            <li class="news-item">
+                <span class="news-date">Nov 2024</span>
+                <span class="news-content">
+                    🎤 Presented my poster <em>"A Framework for Accurate Prediction of Plastic-Degrading Enzymes..."</em> at the <strong>23rd Science Council of Asia Conference</strong>.
+                </span>
+            </li>
 
-                        <!-- <h4 class="font-weight-bold">Bio</h4>
-                        <p class="mb-4 text-justify">I am a Master's student in <strong style="color: #ea52ef;">Computer Science and Engineering</strong> at <strong style="color: #ea52ef;">the University of Dhaka</strong>, with a strong interest in <strong style="color: #ea52ef;">Natural Language Processing (NLP)</strong> and its applications. My research vision focuses on conducting impactful work, particularly in making large language models (LLMs) more parameter-efficient and computationally less demanding.
+            <li class="news-item">
+                <span class="news-date">Aug 2024</span>
+                <span class="news-content">
+                    🎓 Joined the <strong>Data and Design Lab</strong>, University of Dhaka, as a Research Assistant.
+                </span>
+            </li>
 
-                            I am also deeply interested in interdisciplinary research at the intersection of
-                             <strong style="color: #ea52ef;">computational biology</strong> and <strong style="color: #ea52ef;">NLP</strong>, exploring innovative ways to bridge these fields.
-                            
-                           
-                        </p> -->
-
-
-                        <!-- <h4 class="font-weight-bold"><i class="fa-solid fa-file-lines" style="color: #fff313;"></i>  CV </h4> -->
-                        <div class="mb-5">
-                            <button type="button" class="ml-2 mt-2 btn btn-blue btn-sm"><a href="/assets/CV/Fariha_Anjum_Shifa__CV_f.pdf"
-                                    target="_blank">Download CV<i class="ml-2 fa-regular fa-file"></i></a></button>
-                        </div>
+        </ul>
+    </div>
+</div>
+                      
+</br>
+                        
 
 
                     </div>
