@@ -4,226 +4,228 @@
 <head>
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/css/education.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/education.css">
     <link rel="stylesheet" href="/assets/css/fontawesome651.all.min.css">
 
-    <!-- Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 
+    <style>
+        html, body {
+            height: 100%;
+        }
 
+        body {
+            font-family: "Ubuntu Sans", sans-serif;
+            color: #222;
+        }
 
+        /* PAGE LAYOUT FIX */
+        #page-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content-wrap {
+            flex: 1;
+        }
+
+        #site-footer {
+            margin-top: auto;
+        }
+
+        h2, h4 {
+            font-weight: 600;
+        }
+
+        .card {
+            border: 1px solid #e6e6e6;
+            box-shadow: none;
+        }
+
+        .location-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .degree-text {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .cgpa-text {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .intro-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 12px 0;
+        }
+
+        .course-list {
+            padding-left: 18px;
+            margin-bottom: 0;
+        }
+
+        .course-list li {
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
 
+<div id="page-container">
+
+    <header-component></header-component>
+
+    <!-- MAIN CONTENT -->
+    <main id="content-wrap">
+        <div class="container mt-4">
+            <h2 class="mb-4">Education</h2>
+
+            <!-- MSc -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2 text-center">
+                            <img class="img-fluid" src="/assets/img/education/uni_logo_1.png"
+                                 alt="University of Dhaka logo">
+                        </div>
+
+                        <div class="col-md-10">
+                            <h4 class="mb-1">University of Dhaka</h4>
+                            <div class="location-text">Dhaka, Bangladesh · June 2023 – December 2025</div>
+
+                            <div class="degree-text mt-2">M.Sc. in Computer Science & Engineering</div>
+
+                            <p class="cgpa-text mt-2">
+                                CGPA: <strong>3.85 / 4.0</strong>
+                            </p>
+
+                            <p class="mt-3"><strong>Courses</strong></p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="course-list">
+                                        <li>CSE-511: Image Processing</li>
+                                        <li>CSE-530: Cloud Computing</li>
+                                        <li>CSE-532: Decision Diagram VLSI Design</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="course-list">
+                                        <li>CSE-504: Graph Drawing</li>
+                                        <li>CSE-507: Wireless Mesh Networks</li>
+                                        <li>CSE-505: Mobile and Sensor Networking</li>
+                                    </ul>
+                                </div>
+                            </div>
 
 
+                            <hr class="my-3">
 
-    <div id="page-container">
-        <header-component></header-component>
-        <div class="container mt-4" id="content-wrap">
-            <h2 class="mb-4"><b>Education</b></h2>
+                            <p class="mt-2"><strong>Thesis</strong></p>
 
+                            <p class="intro-text">
+                                My master’s thesis focuses on few-shot prompting for Named Entity Recognition (NER).
+                                I proposed <strong>SimPrompt</strong>, a similarity-based prompting approach that improves
+                                few-shot NER performance for the Bangla language.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BSc -->
             <div class="card">
                 <div class="card-body">
-                    <div class="row mt-2">
+                    <div class="row">
                         <div class="col-md-2 text-center">
-                            <img class="card-img-top" src="/assets/img/education/uni_logo_1.png" alt="Card image">
-
+                            <img class="img-fluid" src="/assets/img/education/uni_logo_1.png"
+                                 alt="University of Dhaka logo">
                         </div>
+
                         <div class="col-md-10">
-                            <h4 class="card-title mt-3 mt-md-0 mb-0 text-center text-md-left">University of Dhaka</h4>
-                            <h6 class="small-lemos text-center text-md-left"><span
-                                    class="span-lemos pr-2">Dhaka, Bangladesh</span> (June '2023 - present)</h6>
-                            <h6 class="mt-2 text-center text-md-left mb-3">M.Sc. in Computer
-                                Science & Engineering</small></h6>
-                            <p class="card-text mt-2 text-justify">
-                                <i class="fas fa-circle" style="color: #0098f0"> </i> CGPA:  <span style="color: var(--blue-medium)"> 3.71 / 4.0</span> (18 credits completed out of 36)
+                            <h4 class="mb-1">University of Dhaka</h4>
+                            <div class="location-text">Dhaka, Bangladesh · January 2018 – April 2023</div>
+
+                            <div class="degree-text mt-2">B.Sc. in Computer Science & Engineering</div>
+
+                            <p class="cgpa-text mt-2">
+                                CGPA: <strong>3.21 / 4.0</strong>
+                                <span class="text-muted">(Last 60-credit GPA: 3.51)</span>
                             </p>
-                            <!-- <p class="mt-0 pt-0"><b>Supervisor :</b> Name </p> -->
-                            <p><b>Core Courses :</b>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-511: Image Processing</li>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE-504: Graph Drawing</li>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-530: Cloud Computing</li>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE-507: Wireless Mesh Networks</li>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-532: Decision Diagram VLSI Design </li>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE-505: Mobile and Sensor Networking</li> 
-                                </div>
-                            </div>
+
+                            <p class="intro-text">
+                                My undergraduate training emphasized core computer science foundations,
+                                including algorithms, systems, mathematics, and artificial intelligence,
+                                providing a strong base for advanced study and research.
                             </p>
-                            <!-- <p><b>Activities :</b>
+
+                            <p class="mt-3"><strong>Important Courses</strong></p>
+
                             <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 1 :</span> <a
-                                                href="" target="_blank">Reference Link</a></li>
+                                <div class="col-md-6">
+                                    <ul class="course-list">
+                                        <li>CSE-1102: Discrete Mathematics</li>
+                                        <li>CSE-3201: Operating Systems</li>
+                                        <li>CSE-4105: Artificial Intelligence</li>
+                                        <li>CSE-2204: Computer Architecture</li>
+                                        <li>CSE-2202: Design and Analysis of Algorithms I</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="course-list">
+                                        <li>CSE-2102: Object Oriented Programming</li>
+                                        <li>MATH-2105: Linear Algebra</li>
+                                        <li>CSE-4223: Genomics & Proteomics</li>
+                                        <li>CSE-4103: Mathematical & Statistical Analysis</li>
+                                        <li>CSE-3203: Design and Analysis of Algorithms II</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 2 :</span> <a
-                                                href="" target="_blank">Reference Link</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 3 :</span> <a
-                                                href="" target="_blank">Reference Link</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            </p> -->
 
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-3 card">
-                <div class="card-body">
-                    <div class="row mt-2">
-                        <div class="col-md-2 text-center">
-                            <img class="card-img-top" src="/assets/img/education/uni_logo_1.png" alt="Card image">
-
-                        </div>
-                        <div class="col-md-10">
-                            <h4 class="card-title mt-3 mt-md-0 mb-0 text-center text-md-left">University of Dhaka</h4>
-                            <h6 class="small-lemos text-center text-md-left"><span
-                                    class="span-lemos pr-2">Dhaka, Bangladesh</span> (January 2018 - April 2023)</h6>
-                            <h6 class="mt-2 text-center text-md-left mb-3">B.Sc. in Computer
-                                Science & Engineering</small></h6>
-                            <p class="card-text mt-2 text-justify">
-                                <i class="fas fa-circle" style="color: #0098f0"></i> CGPA:  <b style="color: var(--blue-medium)"> 3.21 / 4.0</b> ( Last 60-credit GPA 3.51)
-                            </p>
-                            <!-- <p class="mt-0 pt-0"><b>Supervisor :</b> Name </p> -->
-                            <p><b>Core Courses :</b>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-1102: Discrete Mathematics</li>
-                                    <li class="pl-4">CSE-3201: Operating Systems</li>
-                                    
-
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE 2102: Object Oriented Programming</li>
-                                    <li class="pl-4">MATH-2105: Linear Algebra</li>
-
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-4105: Artificial Intelligence</li>
-                                    <li class="pl-4">CSE-2204: Computer Architecture and Organization</li>
-                                    
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE-4223: Fundamentals of Genomics and Proteomics</li>
-                                    <li class="pl-4">CSE-4103: Mathematical and Statitical Analysis for Engineers</li>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <li class="pl-4">CSE-2202: Design and Analysis of Algorithms I </li>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <li class="pl-4">CSE-3203: Design and Analysis of Algorithms II</li>
-                                </div>
-                            </div>
-                            </p>
-                            <!-- <p><b>Activities :</b>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 1 :</span> <a
-                                                href="" target="_blank">Reference Link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 2 :</span> <a
-                                                href="" target="_blank">Reference Link</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <ul class="pb-0 mb-1">
-                                        <li class="activity-lemos"><span class="activity-names">Activity 3 :</span> <a
-                                                href="" target="_blank">Reference Link</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            </p> -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- <h5 class="my-5"><b>__ Certifications _____________________</b></h5>
-
-            <ul>
-                <li>RCR</li>
-                <li>Courseera</li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
-
-
         </div>
+    </main>
 
-        <div id="footer">
-            <footer-component></footer-component>
-            <footer-component-lemos></footer-component-lemos>
-        </div>
-    </div>
+    <!-- FOOTER -->
+    <footer id="site-footer">
+        <footer-component></footer-component>
+        <footer-component-lemos></footer-component-lemos>
+    </footer>
 
+</div>
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="/assets/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/popper.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="/assets/js/main.js"></script>
-    <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/footer.js" type="text/javascript"></script>
-    <script src="/components/footer-lemos.js" type="text/javascript"></script>
-    <script src="/assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
-
+<!-- Scripts -->
+<script src="/assets/vendor/jquery/jquery.slim.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/components/header.js" defer></script>
+<script src="/components/footer.js"></script>
+<script src="/components/footer-lemos.js"></script>
+<script src="/assets/js/fontawesome651all.min.js" defer></script>
 
 </body>
-
 </html>
